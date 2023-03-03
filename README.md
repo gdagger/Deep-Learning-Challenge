@@ -55,7 +55,7 @@ The purpose of this analysis is to use a neural network model to predict whether
 
 # Summary
 
-Overall, the optimized model met the 75% accuracy threshold. The final optimized model had 76 features compared to the 43 features in the original model. It included 2 hidden layers with 12 neurons each, using ReLU activation functions for both. THe output layer used a sigmoid activation function.
+Overall, the optimized model met the 75% accuracy threshold. The final optimized model had 76 features compared to the 43 features in the original model. It included 2 hidden layers with 12 neurons each, using ReLU activation functions for both. The output layer used a sigmoid activation function.
 
 ![optimized model accuracy graph](./Screenshots/opt_model_summary.png)
 
@@ -63,6 +63,4 @@ Directly below is a graph to visualize the model's accuracy on the training data
 
 ![optimized model accuracy graph](./Screenshots/accuracy_opt_model.png)
 
-Since we are classifying binary outputs, I would try using a logistic regression on this dataset to see if the accuracy and loss measures are improved. 
-
-Describe how you could use a different model to solve the same problem, and explain why you would use that model (6)
+Since we are classifying binary outputs, I would try using a logistic regression on this dataset to see if the accuracy and loss measures are improved. Logistic regressions work well for binary classifications We could also continue to adjust some of the binning thresholds for the "name", "classification", and ""application_type" value counts to further optimize the current model.
