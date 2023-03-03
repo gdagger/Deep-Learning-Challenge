@@ -51,18 +51,18 @@ The purpose of this analysis is to use a neural network model to predict whether
 - Finally, I tried reintroducing the "name" column as a feature. Since it contained nearly 20000 unique values, I combined all charity names with fewer than 100 unique values into an "Other" category. This increased the accuracy score by around 3 percentage points (to 75.2%) and decreased the loss score by about 6 percentage points (to roughly 50%).
 ![optimized model report 4](./Screenshots/model_opt4.png)
 
-Here is a graph to visualize the model's accuracy over the first 100 epochs:
-
-![optimized model accuracy graph](./Screenshots/accuracy_opt_model.png)
-
-The final optimized model summary:
-
-![optimized model accuracy graph](./Screenshots/opt_model_summary.png)
-
 <hr>
 
 # Summary
 
-Overall, the optimized model met the 75% accuracy threshold.
+Overall, the optimized model met the 75% accuracy threshold. The final optimized model had 76 features compared to the 43 features in the original model. It included 2 hidden layers with 12 neurons each, using ReLU activation functions for both. THe output layer used a sigmoid activation function.
+
+![optimized model accuracy graph](./Screenshots/opt_model_summary.png)
+
+Directly below is a graph to visualize the model's accuracy on the training data over the first 100 epochs:
+
+![optimized model accuracy graph](./Screenshots/accuracy_opt_model.png)
+
+Since we are classifying binary outputs, I would try using a logistic regression on this dataset to see if the accuracy and loss measures are improved. 
 
 Describe how you could use a different model to solve the same problem, and explain why you would use that model (6)
